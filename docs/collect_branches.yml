@@ -1,0 +1,6 @@
+  branches:
+    - branch: develop
+      subfolder: docs/new
+    - branch: master
+      subfolder: docs/old
+      
