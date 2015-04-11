@@ -2,6 +2,7 @@ Tags: plugin
 Edition: elite
 Bundle: contract
 Tagline: Automatic cropping based on a set of areas to preserve specified areas.
+Aliases: /hello
 
 # CropAround plugin
 
