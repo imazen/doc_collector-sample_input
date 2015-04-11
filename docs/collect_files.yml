@@ -1,2 +1,25 @@
-  patterns:
-    - "/**/*.md"
+patterns:
+  - "/**/*.md"
+  - "/**/*.slim"
+
+files:
+  - from: docs/plugins/advancedfilters/readme.slim
+    to: plugins/advancedfilters.slim
+  - from: docs/plugins/animatedgifs/readme.slim
+    to: plugins/animatedgifs.slim
+  - from: docs/plugins/autorotate/readme.md
+    to: plugins/autorotate.md
+  - from: docs/plugins/batchzipper/readme.md
+    to: plugins/batchzipper.md
+  - from: docs/plugins/clientcache/readme.md
+    to: plugins/clientcache.md
+  - from: docs/plugins/cloudfront/readme.md
+    to: plugins/cloudfront.md
+  - from: docs/plugins/copymetadata/readme.md
+    to: plugins/copymetadata.md
+  - from: docs/plugins/croparound/readme.md
+    to: plugins/croparound.md
+  - from: docs/plugins/customoverlay/readme.md
+    to: plugins/customoverlay.md
+  - from: docs/plugins/defaultencoder/readme.md
+    to: plugins/defaultencoder.md
