@@ -25,15 +25,15 @@ files:
   to: plugins/defaultencoder.md
 - from: docs/readme.md
   render_and_split:
-    - to: "/docs/reference.htmf"
+    - to: "docs/reference.htmf"
       start_at: "a[name='full_command']"
       stop_before: "a[name='managed_api']"
       heading: Full Command Reference
-    - to: /docs/managed.htmf
+    - to: docs/managed.htmf
       start_at: "a[name='managed_api']"
       stop_before: "a[name='config_reference']"
       heading: Managed API
-    - to: /docs/configuration.htmf
+    - to: docs/configuration.htmf
       start_at: "a[name='config_reference']"
       stop_before: "a[name='tricks']"
       heading: Configuration Reference
