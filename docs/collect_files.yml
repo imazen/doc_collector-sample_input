@@ -1,2 +1,7 @@
-  patterns:
-    - "/**/*.md"
+patterns:
+- "/**/*.md"
+- "/**/*.slim"
+
+files:
+- from: plugins/advancedfilters/readme.slim
+  to: plugins/advancedfilters.slim
