@@ -23,3 +23,20 @@ files:
     to: plugins/customoverlay.md
   - from: docs/plugins/defaultencoder/readme.md
     to: plugins/defaultencoder.md
+
+
+  - path: README.md
+      render_and_split:
+
+        - to: /docs/reference.htmf
+          start_at: "a[name='full_command']"
+          stop_before: "a[name='managed_api']"
+          heading: Full Command Reference
+        - to: /docs/managed.htmf
+          start_at: "a[name='managed_api']"
+          stop_before: "a[name='config_reference']"
+          heading: Managed API
+        - to: /docs/configuration.htmf
+          start_at: "a[name='config_reference']"
+          stop_before: "a[name='tricks']"
+          heading: Configuration Reference
