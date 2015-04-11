@@ -23,7 +23,7 @@ files:
   to: plugins/customoverlay.md
 - from: docs/plugins/defaultencoder/readme.md
   to: plugins/defaultencoder.md
-- from: readme.md
+- from: docs/readme.md
   render_and_split:
     - to: "/docs/reference.htmf"
       start_at: "a[name='full_command']"
