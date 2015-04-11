@@ -1,42 +1,39 @@
 patterns:
-  - "/**/*.md"
-  - "/**/*.slim"
+- "/**/*.md"
+- "/**/*.slim"
 
 files:
-  - from: docs/plugins/advancedfilters/readme.slim
-    to: plugins/advancedfilters.slim
-  - from: docs/plugins/animatedgifs/readme.slim
-    to: plugins/animatedgifs.slim
-  - from: docs/plugins/autorotate/readme.md
-    to: plugins/autorotate.md
-  - from: docs/plugins/batchzipper/readme.md
-    to: plugins/batchzipper.md
-  - from: docs/plugins/clientcache/readme.md
-    to: plugins/clientcache.md
-  - from: docs/plugins/cloudfront/readme.md
-    to: plugins/cloudfront.md
-  - from: docs/plugins/copymetadata/readme.md
-    to: plugins/copymetadata.md
-  - from: docs/plugins/croparound/readme.md
-    to: plugins/croparound.md
-  - from: docs/plugins/customoverlay/readme.md
-    to: plugins/customoverlay.md
-  - from: docs/plugins/defaultencoder/readme.md
-    to: plugins/defaultencoder.md
-
-
-  - path: README.md
-      render_and_split:
-
-        - to: /docs/reference.htmf
-          start_at: "a[name='full_command']"
-          stop_before: "a[name='managed_api']"
-          heading: Full Command Reference
-        - to: /docs/managed.htmf
-          start_at: "a[name='managed_api']"
-          stop_before: "a[name='config_reference']"
-          heading: Managed API
-        - to: /docs/configuration.htmf
-          start_at: "a[name='config_reference']"
-          stop_before: "a[name='tricks']"
-          heading: Configuration Reference
+- from: docs/plugins/advancedfilters/readme.slim
+  to: plugins/advancedfilters.slim
+- from: docs/plugins/animatedgifs/readme.slim
+  to: plugins/animatedgifs.slim
+- from: docs/plugins/autorotate/readme.md
+  to: plugins/autorotate.md
+- from: docs/plugins/batchzipper/readme.md
+  to: plugins/batchzipper.md
+- from: docs/plugins/clientcache/readme.md
+  to: plugins/clientcache.md
+- from: docs/plugins/cloudfront/readme.md
+  to: plugins/cloudfront.md
+- from: docs/plugins/copymetadata/readme.md
+  to: plugins/copymetadata.md
+- from: docs/plugins/croparound/readme.md
+  to: plugins/croparound.md
+- from: docs/plugins/customoverlay/readme.md
+  to: plugins/customoverlay.md
+- from: docs/plugins/defaultencoder/readme.md
+  to: plugins/defaultencoder.md
+- from: "README.md"
+  render_and_split:
+    - to: "/docs/reference.htmf"
+      start_at: "a[name='full_command']"
+      stop_before: "a[name='managed_api']"
+      heading: Full Command Reference
+    - to: /docs/managed.htmf
+      start_at: "a[name='managed_api']"
+      stop_before: "a[name='config_reference']"
+      heading: Managed API
+    - to: /docs/configuration.htmf
+      start_at: "a[name='config_reference']"
+      stop_before: "a[name='tricks']"
+      heading: Configuration Reference
